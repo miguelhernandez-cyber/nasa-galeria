@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #1b1f4b, #05060f);
+  color: #e8ecff;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  padding: 30px 10px;
+}
+
+.searchbar {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.searchbar input {
+  padding: 10px;
+  width: 300px;
+  max-width: 100%;
+  border: 2px solid #4b5bd6;
+  border-radius: 8px;
+  background: #0d1030;
+  color: white;
+}
+
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #4b5bd6;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #6f7dff;
+}
+
+.contador,
+.mensaje {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: #11153a;
+  border: 1px solid #2c3380;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(111, 125, 255, 0.4);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card h2 {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.fecha {
+  color: #9aa5ff;
+  margin: 5px 0 10px;
+}
+
+.descripcion {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  color: #8a93d6;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .searchbar {
+    flex-direction: column;
+    align-items: center;
+  }
+}
